@@ -7,7 +7,7 @@ import {
   VideoCameraOutlined,
   SolutionOutlined,
 } from '@ant-design/icons';
-import { Button, Layout, Menu, theme, FloatButton} from 'antd';
+import { Button, Layout, Menu, theme} from 'antd';
 import Apps from './components/InList'
 import Dev from './components/Developers'
 import Pro from './components/Profile'
@@ -15,17 +15,11 @@ import Pro from './components/Profile'
 const { Header, Sider, Content } = Layout;
 
 const App: React.FC = () => {
-  const ButtonCase: React.FC = () => <FloatButton onClick={() => Click()} tooltip={<div>Documents</div>} />;
   const [collapsed, setCollapsed] = useState(false);
   const [selectedMenuItemKey, setSelectedMenuItemKey] = useState('1')
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
-  function Click(){
-    if(selectedMenuItemKey === '1'){
-      return 'fdadaffa'
-    }
-  }
 
   function renderContent(){
     if (selectedMenuItemKey === '1'){
