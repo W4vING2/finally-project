@@ -1,13 +1,20 @@
 import React from 'react';
 import { FloatButton } from 'antd';
 
-const Buttoncase: React.FC = () => <FloatButton onClick={Click} tooltip={<div>Support</div>} />;
+function Support(){
+    const Buttoncase: React.FC = () => <FloatButton onClick={Click} tooltip={<div>Support</div>} />;
    function Click(){
     return(
         <div>
-            <h1>Поддержка</h1>
+            <p>d</p>
         </div>
     )
    }
+    return(
+        <div>
+            <Buttoncase/>
+        </div>
+    )
+}
 
-export default Buttoncase;
+export default Support;
